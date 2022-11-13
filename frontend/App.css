@@ -1,0 +1,54 @@
+.flex-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    margin: 40px;
+}
+
+/* NAVIGATION */
+nav .right ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:  center;
+}
+
+nav .right ul li {
+    padding: 10px;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+}
+.buttonGroupH button {
+   margin: 20px;
+}
+.hero .left h2, .hero .left p {
+    padding: 20px;
+}
+.hero .right img {
+    width: 90%;
+}
+
+/* HOME */
+.home-menu-img {
+    margin: 10px;
+}
+
