@@ -1,4 +1,13 @@
 import React from 'react';
+import logoText from '../assets/images/curataro-no-bg.png';
+import heroImage from '../assets/images/anime001r.jpg';
+import alfonsoImage from '../assets/images/anime005.jpg';
+import naomiImage from '../assets/images/anime006.jpg';
+import walletImage from '../assets/images/icons8-wallet-100.png';
+import cashImage from '../assets/images/icons8-cash-96.png';
+import swipeImage from '../assets/images/icons8-swipe-right-64.png';
+import logoCircle from '../assets/images/logo-circle.png';
+
 
 
 export default function LandingPage({onClick}) {
@@ -6,15 +15,15 @@ export default function LandingPage({onClick}) {
       <main>
         <nav className='flex-space-between'>
           <div className='left'> 
-          <p className='logo'>Curataro</p>
+          <img className="logo" src={logoText} alt="logo"></img>
           </div>
           <div className='right'> 
           <ul>
             <li>
-              <p>About</p>
+              <p onClick={onClick}>About</p>
             </li>
             <li>
-              <p>NFT Gallery</p>
+              <p onClick={onClick}>NFT Gallery</p>
             </li>
             <li>
               <p style={{ textAlign: 'center' }}>
@@ -31,19 +40,19 @@ export default function LandingPage({onClick}) {
               <h2>The Future of NFT Curation is NEAR</h2>
               <p>Support the NFT ecosystem, curate, and earn rewards.</p>
               <div className='buttonGroupH'>
-                <button>Start Curating</button>
-                <button>Explore NFTs First</button>
+                <button onClick={onClick}>Start Curating</button>
+                <button onClick={onClick}>Explore NFTs First</button>
               </div>
             </div>
             <div className='right'>
               <a>
-                <img src="https://via.placeholder.com/774x485" alt="Anime hero image"></img>
+                <img src={heroImage} alt="Anime hero image"></img>
               </a>
             </div>
           </section>
   
           <section>
-          <div><img src="https://via.placeholder.com/50x50" alt="logo icon"></img></div>
+          <div><img className="logo-circle" src={logoCircle} alt="logo icon"></img></div>
             <hr></hr>
           </section>
     
@@ -52,19 +61,19 @@ export default function LandingPage({onClick}) {
             <ul className='flex-space-between'>
               <li>
                 <figure className='flex-centered'>
-                <img src="https://via.placeholder.com/50x50" alt="connect wallet icon"></img>
+                <img onClick={onClick} className='works-image' src={walletImage} alt="connect wallet icon"></img>
                 <figcaption>1. Connect Wallet</figcaption>
                 </figure>
                 </li>
               <li>
                 <figure className='flex-centered'>
-                  <img src="https://via.placeholder.com/50x50" alt="start curating icon"></img>
+                  <img onClick={onClick} className='works-image' src={swipeImage} alt="start curating icon"></img>
                   <figcaption>2. Start Curating</figcaption>
                 </figure>
               </li>
               <li>
                 <figure className='flex-centered'>
-                  <img src="https://via.placeholder.com/50x50" alt="earn tokens icon"></img>
+                  <img onClick={onClick} className='works-image' src={cashImage} alt="earn tokens icon"></img>
                   <figcaption>3. Earn Token</figcaption>
                 </figure>
                 
@@ -76,14 +85,14 @@ export default function LandingPage({onClick}) {
             <ul className='flex-space-between'>
               <li>
                 <figure className='flex-centered'>
-                <img src="https://via.placeholder.com/50x50" alt="connect wallet icon"></img>
-                <figcaption>1. Connect Wallet</figcaption>
+                <img className="whois-image" src={alfonsoImage} alt="connect wallet icon"></img>
+                <figcaption>AlfonsoTech</figcaption>
                 </figure>
                 </li>
               <li>
                 <figure className='flex-centered'>
-                  <img src="https://via.placeholder.com/50x50" alt="start curating icon"></img>
-                  <figcaption>2. Start Curating</figcaption>
+                  <img className="whois-image" src={naomiImage} alt="start curating icon"></img>
+                  <figcaption>Naomi</figcaption>
                 </figure>
               </li>
             </ul>

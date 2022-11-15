@@ -1433,6 +1433,21 @@ button {
   }
 }
 
+h1 {
+  margin: 20px;
+  font-size: 80px;
+}
+
+h2 {
+  margin: 10px;
+  font-size: 40px;
+}
+
+h3 {
+  margin: 5px;
+  font-size: 20px;
+}
+
 .flex-centered {
   flex-direction: column;
   justify-content: center;
@@ -1459,8 +1474,9 @@ nav .right ul {
   display: flex;
 }
 
-nav .right ul li {
-  padding: 10px;
+nav .right ul li, .logo {
+  margin: 0 10px 10px;
+  padding: 0 10px 10px;
 }
 
 .hero {
@@ -1483,13 +1499,51 @@ nav .right ul li {
   width: 90%;
 }
 
+.logo-circle {
+  width: 100px;
+}
+
+.works-image {
+  width: 75px;
+  height: 75px;
+  border: 1px solid var(--primary);
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 100px;
+  padding: 10px;
+}
+
+.whois-image {
+  width: 50px;
+  height: 50px;
+  margin: 40px;
+}
+
 .home-menu-img {
-  margin: 10px;
+  width: 420px;
+  height: 300px;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 20px 10px;
+  display: flex;
+}
+
+.home-menu-img img {
+  width: 100%;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 10px;
 }
 
 .cardContainer {
   border: 1px dotted red;
   margin: 100px;
 }
+
+
 
 /*# sourceMappingURL=index.bc0daea6.css.map */

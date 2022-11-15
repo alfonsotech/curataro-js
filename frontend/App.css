@@ -1,3 +1,17 @@
+h1 {
+    font-size: 80px;
+    margin: 20px;
+  }
+  h2 {
+    font-size: 40px;
+    margin: 10px;
+  }
+  h3 {
+    font-size: 20px;
+    margin: 5px;
+  }
+
+
 .flex-centered {
     display: flex;
     flex-direction: column;
@@ -25,11 +39,14 @@ nav .right ul {
     align-items:  center;
 }
 
-nav .right ul li {
+nav .right ul li, .logo {
     padding: 10px;
+    margin: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
-/* HERO */
+/* LANDING PAGE */
 .hero {
     display: flex;
     flex-direction: row;
@@ -46,9 +63,43 @@ nav .right ul li {
 .hero .right img {
     width: 90%;
 }
+.logo-circle {
+    width: 100px;
+}
+.works-image {
+    background-color: #fff;
+    margin: 0 100px;
+    padding: 10px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+}
+.whois-image {
+    width: 50px;
+    height: 50px;
+    margin: 40px;
+}
 
 /* HOME */
 .home-menu-img {
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 20px 20px 10px 20px;
+    width: 420px;
+    height: 300px;
+    background-color: #fff;
+    /* overflow: hidden; */
 }
 
+.home-menu-img img {
+    width: 100%;
+    
+}
+figcaption {
+    margin-top: 10px;
+    text-align: center;
+}

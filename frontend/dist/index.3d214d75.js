@@ -10945,46 +10945,125 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
 var _signOutButton = require("./SignOutButton");
 var _signOutButtonDefault = parcelHelpers.interopDefault(_signOutButton);
+var _navigationCss = require("./Navigation.css");
+var _icons8Coins100Png = require("../assets/images/icons8-coins-100.png");
+var _icons8Coins100PngDefault = parcelHelpers.interopDefault(_icons8Coins100Png);
+var _curataroNoBgPng = require("../assets/images/curataro-no-bg.png");
+var _curataroNoBgPngDefault = parcelHelpers.interopDefault(_curataroNoBgPng);
 function Navigation(props) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+            className: "flex-space-between",
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "Navigation Goes Here"
-                }, void 0, false, {
-                    fileName: "components/Navigation.js",
-                    lineNumber: 10,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
-                    to: "/",
-                    children: "Home"
-                }, void 0, false, {
-                    fileName: "components/Navigation.js",
-                    lineNumber: 11,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
-                    to: "/curation",
-                    children: "Curate"
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "left",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "logo",
+                        src: (0, _curataroNoBgPngDefault.default),
+                        alt: "logo"
+                    }, void 0, false, {
+                        fileName: "components/Navigation.js",
+                        lineNumber: 13,
+                        columnNumber: 11
+                    }, this)
                 }, void 0, false, {
                     fileName: "components/Navigation.js",
                     lineNumber: 12,
-                    columnNumber: 9
+                    columnNumber: 11
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _signOutButtonDefault.default), {
-                    accountId: props.wallet.accountId,
-                    onClick: ()=>props.wallet.signOut()
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "right",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                                    to: "/",
+                                    children: "Home"
+                                }, void 0, false, {
+                                    fileName: "components/Navigation.js",
+                                    lineNumber: 18,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "components/Navigation.js",
+                                lineNumber: 17,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                                    to: "/curation",
+                                    children: "Curate"
+                                }, void 0, false, {
+                                    fileName: "components/Navigation.js",
+                                    lineNumber: 21,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "components/Navigation.js",
+                                lineNumber: 20,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _signOutButtonDefault.default), {
+                                    accountId: props.wallet.accountId,
+                                    onClick: ()=>props.wallet.signOut()
+                                }, void 0, false, {
+                                    fileName: "components/Navigation.js",
+                                    lineNumber: 24,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "components/Navigation.js",
+                                lineNumber: 23,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    children: [
+                                        "69.420 CTR ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                src: (0, _icons8Coins100PngDefault.default),
+                                                alt: "coins icon",
+                                                width: "25",
+                                                height: "25"
+                                            }, void 0, false, {
+                                                fileName: "components/Navigation.js",
+                                                lineNumber: 27,
+                                                columnNumber: 35
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "components/Navigation.js",
+                                            lineNumber: 27,
+                                            columnNumber: 29
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "components/Navigation.js",
+                                    lineNumber: 27,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "components/Navigation.js",
+                                lineNumber: 26,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/Navigation.js",
+                        lineNumber: 16,
+                        columnNumber: 11
+                    }, this)
                 }, void 0, false, {
                     fileName: "components/Navigation.js",
-                    lineNumber: 13,
+                    lineNumber: 15,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "components/Navigation.js",
-            lineNumber: 9,
-            columnNumber: 7
+            lineNumber: 11,
+            columnNumber: 9
         }, this)
     }, void 0, false);
 }
@@ -10998,7 +11077,7 @@ $RefreshReg$(_c, "Navigation");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./SignOutButton":"gqAKw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gqAKw":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./SignOutButton":"gqAKw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Navigation.css":"4qwa1","../assets/images/icons8-coins-100.png":"hA1G6","../assets/images/curataro-no-bg.png":"2NPzM"}],"gqAKw":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d504 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -11036,7 +11115,47 @@ $RefreshReg$(_c, "SignOutButton");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gIRCJ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4qwa1":[function() {},{}],"hA1G6":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("UckoE") + "icons8-coins-100.379ad19a.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"2NPzM":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("UckoE") + "curataro-no-bg.7f1fc0a3.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"gIRCJ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c55a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -11081,6 +11200,12 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _anime004Jpg = require("../assets/images/anime004.jpg");
+var _anime004JpgDefault = parcelHelpers.interopDefault(_anime004Jpg);
+var _anime003Jpg = require("../assets/images/anime003.jpg");
+var _anime003JpgDefault = parcelHelpers.interopDefault(_anime003Jpg);
+var _anime005Jpg = require("../assets/images/anime005.jpg");
+var _anime005JpgDefault = parcelHelpers.interopDefault(_anime005Jpg);
 function Home() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
@@ -11090,14 +11215,14 @@ function Home() {
                     children: "Welcome to Curato."
                 }, void 0, false, {
                     fileName: "components/Home.js",
-                    lineNumber: 7,
+                    lineNumber: 12,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: "Pick what you want to do."
                 }, void 0, false, {
                     fileName: "components/Home.js",
-                    lineNumber: 8,
+                    lineNumber: 13,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -11106,111 +11231,129 @@ function Home() {
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
                                 className: "flex-centered",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        className: "home-menu-img",
-                                        src: "https://via.placeholder.com/250x150",
-                                        alt: "start curating image"
-                                    }, void 0, false, {
-                                        fileName: "components/Home.js",
-                                        lineNumber: 12,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
-                                        children: "Start Curating and Earning"
-                                    }, void 0, false, {
-                                        fileName: "components/Home.js",
-                                        lineNumber: 13,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "home-menu-img",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: (0, _anime004JpgDefault.default),
+                                            alt: "start curating image"
+                                        }, void 0, false, {
+                                            fileName: "components/Home.js",
+                                            lineNumber: 18,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
+                                            children: "Start Curating and Earning"
+                                        }, void 0, false, {
+                                            fileName: "components/Home.js",
+                                            lineNumber: 19,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "components/Home.js",
+                                    lineNumber: 17,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "components/Home.js",
-                                lineNumber: 11,
+                                lineNumber: 16,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "components/Home.js",
-                            lineNumber: 10,
+                            lineNumber: 15,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
                                 className: "flex-centered",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        className: "home-menu-img",
-                                        src: "https://via.placeholder.com/250x150",
-                                        alt: "explore NFTs image"
-                                    }, void 0, false, {
-                                        fileName: "components/Home.js",
-                                        lineNumber: 18,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
-                                        children: "Explore NFTs"
-                                    }, void 0, false, {
-                                        fileName: "components/Home.js",
-                                        lineNumber: 19,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "home-menu-img",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: (0, _anime003JpgDefault.default),
+                                            alt: "explore NFTs image"
+                                        }, void 0, false, {
+                                            fileName: "components/Home.js",
+                                            lineNumber: 26,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
+                                            children: "Explore NFTs"
+                                        }, void 0, false, {
+                                            fileName: "components/Home.js",
+                                            lineNumber: 27,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "components/Home.js",
+                                    lineNumber: 25,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "components/Home.js",
-                                lineNumber: 17,
+                                lineNumber: 24,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "components/Home.js",
-                            lineNumber: 16,
+                            lineNumber: 23,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
                                 className: "flex-centered",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        className: "home-menu-img",
-                                        src: "https://via.placeholder.com/250x150",
-                                        alt: "check balance image"
-                                    }, void 0, false, {
-                                        fileName: "components/Home.js",
-                                        lineNumber: 24,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
-                                        children: "Check Balance Or Sign Out"
-                                    }, void 0, false, {
-                                        fileName: "components/Home.js",
-                                        lineNumber: 25,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "home-menu-img",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: (0, _anime005JpgDefault.default),
+                                            alt: "check balance image"
+                                        }, void 0, false, {
+                                            fileName: "components/Home.js",
+                                            lineNumber: 34,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
+                                            children: "Check Balance Or Sign Out"
+                                        }, void 0, false, {
+                                            fileName: "components/Home.js",
+                                            lineNumber: 35,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "components/Home.js",
+                                    lineNumber: 33,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "components/Home.js",
-                                lineNumber: 23,
+                                lineNumber: 32,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "components/Home.js",
-                            lineNumber: 22,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "components/Home.js",
-                    lineNumber: 9,
+                    lineNumber: 14,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                     fileName: "components/Home.js",
-                    lineNumber: 29,
+                    lineNumber: 40,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "components/Home.js",
-            lineNumber: 6,
+            lineNumber: 11,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -11225,7 +11368,16 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2GpXD":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/images/anime004.jpg":"go5JB","../assets/images/anime003.jpg":"5kk1G","../assets/images/anime005.jpg":"2hVVO"}],"go5JB":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("UckoE") + "anime004.7d278945.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"5kk1G":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("UckoE") + "anime003.d94eafeb.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"2hVVO":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("UckoE") + "anime005.4e43787e.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"2GpXD":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0f30 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -11303,6 +11455,22 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _curataroNoBgPng = require("../assets/images/curataro-no-bg.png");
+var _curataroNoBgPngDefault = parcelHelpers.interopDefault(_curataroNoBgPng);
+var _anime001RJpg = require("../assets/images/anime001r.jpg");
+var _anime001RJpgDefault = parcelHelpers.interopDefault(_anime001RJpg);
+var _anime005Jpg = require("../assets/images/anime005.jpg");
+var _anime005JpgDefault = parcelHelpers.interopDefault(_anime005Jpg);
+var _anime006Jpg = require("../assets/images/anime006.jpg");
+var _anime006JpgDefault = parcelHelpers.interopDefault(_anime006Jpg);
+var _icons8Wallet100Png = require("../assets/images/icons8-wallet-100.png");
+var _icons8Wallet100PngDefault = parcelHelpers.interopDefault(_icons8Wallet100Png);
+var _icons8Cash96Png = require("../assets/images/icons8-cash-96.png");
+var _icons8Cash96PngDefault = parcelHelpers.interopDefault(_icons8Cash96Png);
+var _icons8SwipeRight64Png = require("../assets/images/icons8-swipe-right-64.png");
+var _icons8SwipeRight64PngDefault = parcelHelpers.interopDefault(_icons8SwipeRight64Png);
+var _logoCirclePng = require("../assets/images/logo-circle.png");
+var _logoCirclePngDefault = parcelHelpers.interopDefault(_logoCirclePng);
 function LandingPage({ onClick  }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
         children: [
@@ -11311,17 +11479,18 @@ function LandingPage({ onClick  }) {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "left",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             className: "logo",
-                            children: "Curataro"
+                            src: (0, _curataroNoBgPngDefault.default),
+                            alt: "logo"
                         }, void 0, false, {
                             fileName: "components/LandingPage.js",
-                            lineNumber: 9,
+                            lineNumber: 18,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "components/LandingPage.js",
-                        lineNumber: 8,
+                        lineNumber: 17,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -11330,28 +11499,30 @@ function LandingPage({ onClick  }) {
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        onClick: onClick,
                                         children: "About"
                                     }, void 0, false, {
                                         fileName: "components/LandingPage.js",
-                                        lineNumber: 14,
+                                        lineNumber: 23,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "components/LandingPage.js",
-                                    lineNumber: 13,
+                                    lineNumber: 22,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        onClick: onClick,
                                         children: "NFT Gallery"
                                     }, void 0, false, {
                                         fileName: "components/LandingPage.js",
-                                        lineNumber: 17,
+                                        lineNumber: 26,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "components/LandingPage.js",
-                                    lineNumber: 16,
+                                    lineNumber: 25,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -11364,34 +11535,34 @@ function LandingPage({ onClick  }) {
                                             children: "Connect Wallet"
                                         }, void 0, false, {
                                             fileName: "components/LandingPage.js",
-                                            lineNumber: 21,
+                                            lineNumber: 30,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "components/LandingPage.js",
-                                        lineNumber: 20,
+                                        lineNumber: 29,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "components/LandingPage.js",
-                                    lineNumber: 19,
+                                    lineNumber: 28,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "components/LandingPage.js",
-                            lineNumber: 12,
+                            lineNumber: 21,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "components/LandingPage.js",
-                        lineNumber: 11,
+                        lineNumber: 20,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/LandingPage.js",
-                lineNumber: 7,
+                lineNumber: 16,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -11407,89 +11578,64 @@ function LandingPage({ onClick  }) {
                                         children: "The Future of NFT Curation is NEAR"
                                     }, void 0, false, {
                                         fileName: "components/LandingPage.js",
-                                        lineNumber: 31,
+                                        lineNumber: 40,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: "Support the NFT ecosystem, curate, and earn rewards."
                                     }, void 0, false, {
                                         fileName: "components/LandingPage.js",
-                                        lineNumber: 32,
+                                        lineNumber: 41,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "buttonGroupH",
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                onClick: onClick,
                                                 children: "Start Curating"
                                             }, void 0, false, {
                                                 fileName: "components/LandingPage.js",
-                                                lineNumber: 34,
+                                                lineNumber: 43,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                onClick: onClick,
                                                 children: "Explore NFTs First"
                                             }, void 0, false, {
                                                 fileName: "components/LandingPage.js",
-                                                lineNumber: 35,
+                                                lineNumber: 44,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/LandingPage.js",
-                                        lineNumber: 33,
+                                        lineNumber: 42,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/LandingPage.js",
-                                lineNumber: 30,
+                                lineNumber: 39,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "right",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        src: "https://via.placeholder.com/774x485",
+                                        src: (0, _anime001RJpgDefault.default),
                                         alt: "Anime hero image"
                                     }, void 0, false, {
                                         fileName: "components/LandingPage.js",
-                                        lineNumber: 40,
+                                        lineNumber: 49,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "components/LandingPage.js",
-                                    lineNumber: 39,
+                                    lineNumber: 48,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
-                                fileName: "components/LandingPage.js",
-                                lineNumber: 38,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "components/LandingPage.js",
-                        lineNumber: 29,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: "https://via.placeholder.com/50x50",
-                                    alt: "logo icon"
-                                }, void 0, false, {
-                                    fileName: "components/LandingPage.js",
-                                    lineNumber: 46,
-                                    columnNumber: 16
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "components/LandingPage.js",
-                                lineNumber: 46,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                                 fileName: "components/LandingPage.js",
                                 lineNumber: 47,
                                 columnNumber: 13
@@ -11497,7 +11643,35 @@ function LandingPage({ onClick  }) {
                         ]
                     }, void 0, true, {
                         fileName: "components/LandingPage.js",
-                        lineNumber: 45,
+                        lineNumber: 38,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "logo-circle",
+                                    src: (0, _logoCirclePngDefault.default),
+                                    alt: "logo icon"
+                                }, void 0, false, {
+                                    fileName: "components/LandingPage.js",
+                                    lineNumber: 55,
+                                    columnNumber: 16
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "components/LandingPage.js",
+                                lineNumber: 55,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                                fileName: "components/LandingPage.js",
+                                lineNumber: 56,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/LandingPage.js",
+                        lineNumber: 54,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -11507,7 +11681,7 @@ function LandingPage({ onClick  }) {
                                 children: "How It Works"
                             }, void 0, false, {
                                 fileName: "components/LandingPage.js",
-                                lineNumber: 51,
+                                lineNumber: 60,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -11518,29 +11692,31 @@ function LandingPage({ onClick  }) {
                                             className: "flex-centered",
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                    src: "https://via.placeholder.com/50x50",
+                                                    onClick: onClick,
+                                                    className: "works-image",
+                                                    src: (0, _icons8Wallet100PngDefault.default),
                                                     alt: "connect wallet icon"
                                                 }, void 0, false, {
                                                     fileName: "components/LandingPage.js",
-                                                    lineNumber: 55,
+                                                    lineNumber: 64,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
                                                     children: "1. Connect Wallet"
                                                 }, void 0, false, {
                                                     fileName: "components/LandingPage.js",
-                                                    lineNumber: 56,
+                                                    lineNumber: 65,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "components/LandingPage.js",
-                                            lineNumber: 54,
+                                            lineNumber: 63,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "components/LandingPage.js",
-                                        lineNumber: 53,
+                                        lineNumber: 62,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -11548,29 +11724,31 @@ function LandingPage({ onClick  }) {
                                             className: "flex-centered",
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                    src: "https://via.placeholder.com/50x50",
+                                                    onClick: onClick,
+                                                    className: "works-image",
+                                                    src: (0, _icons8SwipeRight64PngDefault.default),
                                                     alt: "start curating icon"
                                                 }, void 0, false, {
                                                     fileName: "components/LandingPage.js",
-                                                    lineNumber: 61,
+                                                    lineNumber: 70,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
                                                     children: "2. Start Curating"
                                                 }, void 0, false, {
                                                     fileName: "components/LandingPage.js",
-                                                    lineNumber: 62,
+                                                    lineNumber: 71,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "components/LandingPage.js",
-                                            lineNumber: 60,
+                                            lineNumber: 69,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "components/LandingPage.js",
-                                        lineNumber: 59,
+                                        lineNumber: 68,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -11578,41 +11756,43 @@ function LandingPage({ onClick  }) {
                                             className: "flex-centered",
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                    src: "https://via.placeholder.com/50x50",
+                                                    onClick: onClick,
+                                                    className: "works-image",
+                                                    src: (0, _icons8Cash96PngDefault.default),
                                                     alt: "earn tokens icon"
                                                 }, void 0, false, {
                                                     fileName: "components/LandingPage.js",
-                                                    lineNumber: 67,
+                                                    lineNumber: 76,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
                                                     children: "3. Earn Token"
                                                 }, void 0, false, {
                                                     fileName: "components/LandingPage.js",
-                                                    lineNumber: 68,
+                                                    lineNumber: 77,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "components/LandingPage.js",
-                                            lineNumber: 66,
+                                            lineNumber: 75,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "components/LandingPage.js",
-                                        lineNumber: 65,
+                                        lineNumber: 74,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/LandingPage.js",
-                                lineNumber: 52,
+                                lineNumber: 61,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "components/LandingPage.js",
-                        lineNumber: 50,
+                        lineNumber: 59,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -11622,7 +11802,7 @@ function LandingPage({ onClick  }) {
                                 children: "Who Built This?"
                             }, void 0, false, {
                                 fileName: "components/LandingPage.js",
-                                lineNumber: 75,
+                                lineNumber: 84,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -11633,29 +11813,30 @@ function LandingPage({ onClick  }) {
                                             className: "flex-centered",
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                    src: "https://via.placeholder.com/50x50",
+                                                    className: "whois-image",
+                                                    src: (0, _anime005JpgDefault.default),
                                                     alt: "connect wallet icon"
                                                 }, void 0, false, {
                                                     fileName: "components/LandingPage.js",
-                                                    lineNumber: 79,
+                                                    lineNumber: 88,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
-                                                    children: "1. Connect Wallet"
+                                                    children: "AlfonsoTech"
                                                 }, void 0, false, {
                                                     fileName: "components/LandingPage.js",
-                                                    lineNumber: 80,
+                                                    lineNumber: 89,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "components/LandingPage.js",
-                                            lineNumber: 78,
+                                            lineNumber: 87,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "components/LandingPage.js",
-                                        lineNumber: 77,
+                                        lineNumber: 86,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -11663,53 +11844,54 @@ function LandingPage({ onClick  }) {
                                             className: "flex-centered",
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                    src: "https://via.placeholder.com/50x50",
+                                                    className: "whois-image",
+                                                    src: (0, _anime006JpgDefault.default),
                                                     alt: "start curating icon"
                                                 }, void 0, false, {
                                                     fileName: "components/LandingPage.js",
-                                                    lineNumber: 85,
+                                                    lineNumber: 94,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figcaption", {
-                                                    children: "2. Start Curating"
+                                                    children: "Naomi"
                                                 }, void 0, false, {
                                                     fileName: "components/LandingPage.js",
-                                                    lineNumber: 86,
+                                                    lineNumber: 95,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "components/LandingPage.js",
-                                            lineNumber: 84,
+                                            lineNumber: 93,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "components/LandingPage.js",
-                                        lineNumber: 83,
+                                        lineNumber: 92,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/LandingPage.js",
-                                lineNumber: 76,
+                                lineNumber: 85,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "components/LandingPage.js",
-                        lineNumber: 74,
+                        lineNumber: 83,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/LandingPage.js",
-                lineNumber: 28,
+                lineNumber: 37,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/LandingPage.js",
-        lineNumber: 6,
+        lineNumber: 15,
         columnNumber: 7
     }, this);
 }
@@ -11723,7 +11905,25 @@ $RefreshReg$(_c, "LandingPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7g3a6":[function() {},{}],"lOjBx":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/images/curataro-no-bg.png":"2NPzM","../assets/images/anime001r.jpg":"8yZBF","../assets/images/icons8-wallet-100.png":"fURZx","../assets/images/icons8-cash-96.png":"lQDiE","../assets/images/icons8-swipe-right-64.png":"bQm6p","../assets/images/anime006.jpg":"cuvKd","../assets/images/logo-circle.png":"6GjWS","../assets/images/anime005.jpg":"2hVVO"}],"8yZBF":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("UckoE") + "anime001r.ef2e1488.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"fURZx":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("UckoE") + "icons8-wallet-100.df2d23a7.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"lQDiE":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("UckoE") + "icons8-cash-96.67f75e75.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"bQm6p":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("UckoE") + "icons8-swipe-right-64.ee66d6a1.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"cuvKd":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("UckoE") + "anime006.27eb107c.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"6GjWS":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("UckoE") + "logo-circle.438d18f0.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"7g3a6":[function() {},{}],"lOjBx":[function(require,module,exports) {
 "use strict";
 var m = require("react-dom");
 var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
@@ -63316,41 +63516,7 @@ module.exports = function() {
 },{}],"dGAA6":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("UckoE") + "ledger-icon.a0186cc1.png" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"aTHwi":[function(require,module,exports) {
+},{"./helpers/bundle-url":"lgJ39"}],"aTHwi":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("UckoE") + "my-near-wallet-icon.ebfed669.png" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"9enQf":[function(require,module,exports) {

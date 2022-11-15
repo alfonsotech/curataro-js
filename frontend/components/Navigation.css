@@ -1,0 +1,15 @@
+/* .signed-in-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+
+.signed-in-nav .left {  
+    justify-content: flex-start;
+}
+
+.signed-in-nav .right ul li{
+    margin: 10px;
+} */

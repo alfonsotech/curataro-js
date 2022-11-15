@@ -1,5 +1,10 @@
 import React from 'react';
 
+import image1 from '../assets/images/anime004.jpg'
+import image2 from '../assets/images/anime003.jpg'
+import image3 from '../assets/images/anime005.jpg'
+
+
 export default function Home() {
     return (
       <>
@@ -9,20 +14,26 @@ export default function Home() {
         <ul className='flex-space-between'>
           <li>
             <figure className='flex-centered'>
-              <img className='home-menu-img' src="https://via.placeholder.com/250x150" alt="start curating image"></img>
-              <figcaption>Start Curating and Earning</figcaption>
+              <div className='home-menu-img'>
+                <img src={image1} alt="start curating image"></img>
+                <figcaption>Start Curating and Earning</figcaption>
+              </div>
             </figure>
           </li>
           <li>
             <figure className='flex-centered'>
-              <img className='home-menu-img' src="https://via.placeholder.com/250x150" alt="explore NFTs image"></img>
-              <figcaption>Explore NFTs</figcaption>
+              <div className='home-menu-img'>
+                <img src={image2} alt="explore NFTs image"></img>
+                <figcaption>Explore NFTs</figcaption>
+              </div>
             </figure>
           </li>
           <li>
             <figure className='flex-centered'>
-              <img className='home-menu-img' src="https://via.placeholder.com/250x150" alt="check balance image"></img>
-              <figcaption>Check Balance Or Sign Out</figcaption>
+              <div className='home-menu-img'>
+                <img src={image3} alt="check balance image"></img>
+                <figcaption>Check Balance Or Sign Out</figcaption>
+              </div>
             </figure>
           </li>
         </ul>
