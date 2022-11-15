@@ -1487,4 +1487,9 @@ nav .right ul li {
   margin: 10px;
 }
 
+.cardContainer {
+  border: 1px dotted red;
+  margin: 100px;
+}
+
 /*# sourceMappingURL=index.bc0daea6.css.map */

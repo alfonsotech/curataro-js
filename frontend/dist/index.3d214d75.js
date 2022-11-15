@@ -11237,18 +11237,48 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _curationCss = require("./Curation.css");
+var _dataJson = require("../../backend/data.json");
+var _dataJsonDefault = parcelHelpers.interopDefault(_dataJson);
+var _s = $RefreshSig$();
 function Curation() {
+    _s();
+    // TODO: when quickly swipe and restore multiple times the same card,
+    // it happens multiple outOfFrame events are queued and the card disappear
+    // during latest swipes. Only the last outOfFrame event should be considered valid
+    const [currentIndex, setCurrentIndex] = (0, _react.useState)((0, _dataJsonDefault.default).length - 1);
+    const updateCurrentIndex = (val)=>{
+        setCurrentIndex(val);
+        currentIndexRef.current = val;
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "Curation Goes Here"
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                children: (0, _dataJsonDefault.default).map((item, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: [
+                            item.nft_token_id,
+                            " - ",
+                            item.nft_title
+                        ]
+                    }, i, true, {
+                        fileName: "components/Curation.js",
+                        lineNumber: 22,
+                        columnNumber: 38
+                    }, this))
+            }, void 0, false, {
+                fileName: "components/Curation.js",
+                lineNumber: 21,
+                columnNumber: 11
+            }, this)
         }, void 0, false, {
             fileName: "components/Curation.js",
-            lineNumber: 6,
-            columnNumber: 7
+            lineNumber: 20,
+            columnNumber: 5
         }, this)
     }, void 0, false);
 }
 exports.default = Curation;
+_s(Curation, "hGLaTOcTWtcX5+13WdIBDNhKWWg=");
 _c = Curation;
 var _c;
 $RefreshReg$(_c, "Curation");
@@ -11258,7 +11288,10 @@ $RefreshReg$(_c, "Curation");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"czvN7":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../backend/data.json":"kicoQ","./Curation.css":"b3qel"}],"kicoQ":[function(require,module,exports) {
+module.exports = JSON.parse('[{"id":1,"nft_title":"Sailor Moon Cat 1","nft_artist":"Cat Creator","nft_token_id":"12dks23532kds","nft_contract":"sldkhoiehb","image_url":"https://via.placeholder.com/50x50","question":"Does this image show a cat?"},{"id":2,"nft_title":"Sailor Moon Cat 2","nft_artist":"Cat Creator","nft_token_id":"12dks23532fds","nft_contract":"sldkhoiehb","image_url":"https://via.placeholder.com/50x50","question":"Does this image show a cat?"},{"id":3,"nft_title":"Sailor Moon Cat 3","nft_artist":"Cat Creator","nft_token_id":"12dks23532kfd","nft_contract":"sldkhoiehb","image_url":"https://via.placeholder.com/50x50","question":"Does this image show a cat?"},{"id":4,"nft_title":"Sailor Moon Cat 4","nft_artist":"Cat Creator","nft_token_id":"12dks23532kfds","nft_contract":"sldkhoiehb","image_url":"https://via.placeholder.com/50x50","question":"Does this image show a cat?"}]');
+
+},{}],"b3qel":[function() {},{}],"czvN7":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$f83e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
