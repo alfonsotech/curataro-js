@@ -20,6 +20,7 @@
     "typescript": "^4.7.2"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.1",
     "@near-wallet-selector/core": "^7.0.0",
     "@near-wallet-selector/ledger": "^7.0.0",
     "@near-wallet-selector/math-wallet": "^7.0.0",
@@ -32,6 +33,7 @@
     "@near-wallet-selector/sender": "^7.0.0",
     "@near-wallet-selector/wallet-connect": "^7.0.0",
     "@react-spring/web": "^9.5.5",
+    "graphql": "^16.6.0",
     "near-api-js": "^0.44.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",

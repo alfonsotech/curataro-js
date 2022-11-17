@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import SignOutButton from './SignOutButton';
-import './Navigation.css';  
+import SignOutButton from './SignOutButton'; 
 import coinImage from '../assets/images/icons8-coins-100.png'; 
 import logoText from '../assets/images/curataro-no-bg.png' 
 
