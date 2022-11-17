@@ -17,6 +17,15 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+}
+
+.flex-3-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .flex-space-between {
@@ -24,6 +33,7 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 section {
@@ -89,10 +99,10 @@ nav .right ul li, .logo {
     align-items: center;
 
     margin: 20px 20px 10px 20px;
-    width: 420px;
-    height: 300px;
-    background-color: #fff;
-    /* overflow: hidden; */
+    width: 500px;
+    height:100%;
+    background-color: var(--br);
+    overflow: hidden;
 }
 
 .home-menu-img img {
@@ -105,7 +115,20 @@ figcaption {
 }
 
 /* CURATION */
+.curation-page {
+    padding-bottom: 80px;
+}
 /* .cardContainer {
     margin: 100px;
     border: 1px dotted red;
 } */
+
+FOOTER
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary);
+}
+.footer-icon {
+    width: 50px;
+}

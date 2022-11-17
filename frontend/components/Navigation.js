@@ -5,6 +5,7 @@ import coinImage from '../assets/images/icons8-coins-100.png';
 import logoText from '../assets/images/curataro-no-bg.png' 
 
 export default function Navigation(props) {
+  const currentEarnings = parseFloat(props.earnings).toFixed(2);
     return (
       <>
         <nav className='flex-space-between'>
@@ -23,14 +24,10 @@ export default function Navigation(props) {
             <SignOutButton accountId={props.wallet.accountId} onClick={() => props.wallet.signOut()}/>
             </li>
             <li>
-              <p>69.420 CTR <span><img src={coinImage} alt="coins icon" width="25" height="25"></img></span></p>
+              <p><span><img src={coinImage} alt="coins icon" width="20" height="20"></img></span> {currentEarnings} CTR</p>
             </li>
           </ul>
-        </div>
-        
-        
-        
-        
+        </div>  
       </nav>
        
       </>
