@@ -47,6 +47,11 @@ section {
     margin: 40px;
 }
 
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
 /* NAVIGATION */
 nav .right ul {
     list-style-type: none;
