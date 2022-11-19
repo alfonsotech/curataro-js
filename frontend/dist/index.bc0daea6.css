@@ -52,7 +52,6 @@ html {
 
 * {
   box-sizing: border-box;
-  outline: 1px dotted red;
 }
 
 html, body {
@@ -1570,6 +1569,16 @@ figcaption {
 
 .curation-page {
   padding-bottom: 80px;
+}
+
+.total-cards-widget {
+  text-align: right;
+  margin: 10px;
+  padding: 10px;
+}
+
+.arrow-icon {
+  width: 80px;
 }
 
 FOOTER .footer {

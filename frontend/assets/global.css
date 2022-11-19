@@ -67,7 +67,7 @@ html {
 
 * {
   box-sizing: border-box;
-  outline: 1px dotted red;
+  /* outline: 1px dotted red; */
 }
 
 html, body {

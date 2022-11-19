@@ -13,7 +13,7 @@ export default function Home() {
         <h2>Pick what you want to do.</h2>
         <ul className='flex-space-between'>
           <li>
-            {/* TODO: This is a hack */}
+            {/* TODO: This is a hack! */}
             <a href="http://localhost:1234/curation">
               <figure className='flex-centered'>
                 <div className='home-menu-img'>
