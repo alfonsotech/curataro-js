@@ -1,5 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
+import data from '../../backend/data.json';
 
 // Components
 import Navigation from './Navigation';
@@ -12,7 +13,7 @@ export default function Routing(props) {
     const [uiPleaseWait, setUiPleaseWait] = React.useState(true);
     const [index, setIndex] = React.useState(0);
     const updateIndex = () => {
-      if(index >= 2) {
+      if(index >= data.length - 1) {
         setIndex(0);
       } else {
         setIndex(index + 1);
@@ -57,7 +58,8 @@ export default function Routing(props) {
       updateTotalCurated, 
       totalCurated,
       updateIndex, 
-      index
+      index,
+      data
       }
 
       let propsNavigation = {

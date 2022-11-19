@@ -13,21 +13,22 @@ export default function Home() {
         <h2>Pick what you want to do.</h2>
         <ul className='flex-space-between'>
           <li>
-            {/* TODO: This is a hack! */}
-            <a href="http://localhost:1234/curation">
+            
               <figure className='flex-centered'>
                 <div className='home-menu-img'>
-                  <img src={image1} alt="start curating image"></img>
-                  <figcaption>Start Curating and Earning</figcaption>
+                  <a href="http://localhost:1234/curation">
+                    <img src={image1} alt="start curating image"></img>
+                  </a>
+                  <figcaption><h2>Start Curating and Earning</h2></figcaption>
                 </div>
               </figure>
-            </a>
+            
           </li>
           <li>
             <figure className='flex-centered'>
               <div className='home-menu-img'>
                 <img src={image2} alt="explore NFTs image"></img>
-                <figcaption>Explore NFTs</figcaption>
+                <figcaption><h2>Explore NFTs</h2></figcaption>
               </div>
             </figure>
           </li>
@@ -35,7 +36,7 @@ export default function Home() {
             <figure className='flex-centered'>
               <div className='home-menu-img'>
                 <img src={image3} alt="check balance image"></img>
-                <figcaption>Check Balance Or Sign Out</figcaption>
+                <figcaption><h2>Check Balance or Sign Out</h2></figcaption>
               </div>
             </figure>
           </li>

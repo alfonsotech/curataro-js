@@ -1455,16 +1455,25 @@ button {
 
 h1 {
   margin: 20px;
+  font-family: Cormorant Garamond, Times, serif;
   font-size: 80px;
 }
 
 h2 {
   margin: 10px;
+  font-family: Cormorant Garamond, Times, serif;
   font-size: 40px;
 }
 
 h3 {
   margin: 5px;
+  font-family: Cormorant Garamond, Times, serif;
+  font-size: 25px;
+}
+
+p {
+  margin: 3px;
+  font-family: Cormorant Garamond, Times, serif;
   font-size: 20px;
 }
 
@@ -1550,10 +1559,14 @@ nav .right ul li, .logo {
   width: 500px;
   height: 100%;
   background-color: var(--br);
+  filter: drop-shadow(0 .05rem .15rem var(--fg));
+  background-color: #fff;
+  border-radius: 10px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   margin: 20px 20px 10px;
+  padding-bottom: 40px;
   display: flex;
   overflow: hidden;
 }
@@ -1572,13 +1585,22 @@ figcaption {
 }
 
 .total-cards-widget {
-  text-align: right;
+  text-align: center;
   margin: 10px;
   padding: 10px;
 }
 
 .arrow-icon {
   width: 80px;
+  color: var(--primary);
+}
+
+.arrow-icon-container {
+  padding: 0 40px;
+}
+
+.arrow-icon-container p {
+  text-align: center;
 }
 
 FOOTER .footer {

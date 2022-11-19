@@ -1,9 +1,9 @@
 import React, { useState, useMemo, useRef } from 'react'
-import data from '../../backend/data.json';
+// import data from '../../backend/data.json';
 import { useQuery, gql } from "@apollo/client";
 import Card from './Card';
 
-import LeftArrow from '../assets/images/icons8-left-arrow-64.png'
+import LeftArrow from '../assets/images/icons8-left-arrow-32.png'
 import RightArrow from '../assets/images/icons8-right-arrow-32.png'
 
 // This code allows you to pull NFTs from an account using Mintbases' API. I switched to some hardcoded data for simplicity.
@@ -32,21 +32,21 @@ export default function Curation(props) {
   // if (error) return <pre>{error.message}</pre>
 
   let propsCard = {
-    index:props.index, 
-    data
+    index: props.index, 
+    data: props.data
   }
     
   return (
     <>
     <main className="curation-page">
       <ul className='flex-3-columns'>
-        <li>
+        <li className="arrow-icon-container">
           <img className="arrow-icon" src={LeftArrow} onClick={handleClick}></img>
           <p>No</p>
         </li>
           {/* <Card index={props.index} data={data.mb_views_nft_tokens}/> */}
           <Card {...propsCard}/>
-         <li>
+         <li className="arrow-icon-container">
           <img className="arrow-icon" src={RightArrow} onClick={handleClick}></img>
           <p>Yes</p>
         </li>

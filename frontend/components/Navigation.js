@@ -15,16 +15,16 @@ export default function Navigation(props) {
         <div className="right">
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/"><h3>Home</h3></NavLink>
             </li>
             <li>
-            <NavLink to="/curation">Curate</NavLink>
+            <NavLink to="/curation"><h3>Curate</h3></NavLink>
             </li>
             <li>
             <SignOutButton accountId={props.wallet.accountId} onClick={() => props.wallet.signOut()}/>
             </li>
             <li>
-              <p><span><img src={coinImage} alt="coins icon" width="20" height="20"></img></span> {currentEarnings} CTR</p>
+              <h3><span><img src={coinImage} alt="coins icon" width="20" height="20"></img></span> {currentEarnings} CTR</h3>
             </li>
           </ul>
         </div>  
