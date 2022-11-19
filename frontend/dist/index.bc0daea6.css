@@ -1502,6 +1502,10 @@ section {
   margin: 40px;
 }
 
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
 nav .right ul {
   flex-direction: row;
   justify-content: space-between;
