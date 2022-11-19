@@ -40,13 +40,15 @@ export default function Curation(props) {
     <>
     <main className="curation-page">
       <ul className='flex-3-columns'>
-        <li className="arrow-icon-container">
+        <li className="arrow-icon-container-left">
           <img className="arrow-icon" src={LeftArrow} onClick={handleClick}></img>
           <p>No</p>
         </li>
+        <li>
           {/* <Card index={props.index} data={data.mb_views_nft_tokens}/> */}
           <Card {...propsCard}/>
-         <li className="arrow-icon-container">
+        </li> 
+         <li className="arrow-icon-container-right">
           <img className="arrow-icon" src={RightArrow} onClick={handleClick}></img>
           <p>Yes</p>
         </li>

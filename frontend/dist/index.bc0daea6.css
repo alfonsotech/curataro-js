@@ -1599,8 +1599,20 @@ figcaption {
   color: var(--primary);
 }
 
-.arrow-icon-container {
+.arrow-icon-container-left {
   padding: 0 40px;
+  display: block;
+  position: sticky;
+  top: 50%;
+  right: 50%;
+}
+
+.arrow-icon-container-right {
+  padding: 0 40px;
+  display: block;
+  position: sticky;
+  top: 50%;
+  left: 50%;
 }
 
 .arrow-icon-container p {
