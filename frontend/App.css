@@ -1,14 +1,22 @@
 h1 {
     font-size: 80px;
+    font-family:'Cormorant Garamond', Times, serif;
     margin: 20px;
   }
   h2 {
     font-size: 40px;
+    font-family:'Cormorant Garamond', Times, serif;
     margin: 10px;
   }
   h3 {
-    font-size: 20px;
+    font-size: 25px;
+    font-family:'Cormorant Garamond', Times, serif;
     margin: 5px;
+  }
+  p {
+    font-size: 20px;
+    font-family:'Cormorant Garamond', Times, serif;
+    margin: 3px;
   }
 
 
@@ -98,10 +106,14 @@ nav .right ul li, .logo {
     align-items: center;
 
     margin: 20px 20px 10px 20px;
+    padding-bottom: 40px;
     width: 500px;
     height:100%;
     background-color: var(--br);
     overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    filter: drop-shadow(0 .05rem .15rem var(--fg));
 }
 
 .home-menu-img img {
@@ -117,12 +129,19 @@ figcaption {
     padding-bottom: 80px;
 }
 .total-cards-widget {
-    text-align: right;
+    text-align: center;
     padding: 10px;
     margin: 10px; 
 }
 .arrow-icon {
     width: 80px;
+    color: var(--primary);
+}
+.arrow-icon-container {
+    padding: 0 40px;
+}
+.arrow-icon-container p {
+    text-align: center;
 }
 /* .cardContainer {
     margin: 100px;
