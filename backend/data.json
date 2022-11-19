@@ -1,33 +1,23 @@
-[{
-    "id": 1,
-    "nft_title": "Sailor Moon Cat 1",
-    "nft_artist": "Cat Creator",
-    "nft_token_id": "12dks23532kds",
-    "nft_contract": "sldkhoiehb",
-    "image_url": "https://via.placeholder.com/50x50",
-    "question": "Does this image show a cat?"
-  }, {
-    "id": 2,
-    "nft_title": "Sailor Moon Cat 2",
-    "nft_artist": "Cat Creator",
-    "nft_token_id": "12dks23532fds",
-    "nft_contract": "sldkhoiehb",
-    "image_url": "https://via.placeholder.com/50x50",
-    "question": "Does this image show a cat?"
-  }, {
-    "id": 3,
-    "nft_title": "Sailor Moon Cat 3",
-    "nft_artist": "Cat Creator",
-    "nft_token_id": "12dks23532kfd",
-    "nft_contract": "sldkhoiehb",
-    "image_url": "https://via.placeholder.com/50x50",
-    "question": "Does this image show a cat?"
-  }, {
-    "id": 4,
-    "nft_title": "Sailor Moon Cat 4",
-    "nft_artist": "Cat Creator",
-    "nft_token_id": "12dks23532kfds",
-    "nft_contract": "sldkhoiehb",
-    "image_url": "https://via.placeholder.com/50x50",
-    "question": "Does this image show a cat?"
-  }]
+[
+  {
+    "nft_contract_id": "abstraction.nft-auction-factory.testnet",
+    "title": "Abstract Work I",
+    "media": "http://ipfs.fleek.co/ipfs/bafybeiadjkp47zjubramwjnc2nmjyyrgmv3cffnwd6obumvlyfqay5eo4u",
+    "owner": "alfonsoteched.testnet",
+    "question":"Is this an Abstract work of art?"
+  },
+  {
+    "nft_contract_id": "pfp.nft-auction-factory.testnet",
+    "title": "GOAT PFP",
+    "media": "https://ipfs.io/ipfs/QmeGAm35MZgJqhREfpQZaHmmsz5S14X8U7CuW7oz4AFA2g?filename=DALL%C2%B7E%202022-11-06%2009.14.10%20-%20starry%20nights%20background.png",
+    "owner": "alfonsoteched.testnet",
+    "question":"Is there a CAT in this image?"
+  },
+  {
+    "nft_contract_id": "kittykat.nft-auction-factory.testnet",
+    "title": "Anime Kitty",
+    "media": "https://ipfs.io/ipfs/QmVvjGa3mrPFLZBhwgnGmreUPEa7PymDXwthPdSLxyaaAG?filename=anime002.jpg",
+    "owner": "alfonsoteched.testnet",
+    "question":"Is there a CAT in this image?"
+  }
+]

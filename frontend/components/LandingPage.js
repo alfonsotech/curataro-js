@@ -98,6 +98,9 @@ export default function LandingPage({onClick}) {
             </ul>
           </section>
         </div>
+        {/* <footer className="footer">
+          <p>Built with <span><img className="logo-circle footer-icon" src={logoCircle} alt="logo icon"></img></span> by Team Hashira during MetaBuild</p> 
+        </footer> */}
       </main>
     );
   }

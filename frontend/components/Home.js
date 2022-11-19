@@ -13,12 +13,15 @@ export default function Home() {
         <h2>Pick what you want to do.</h2>
         <ul className='flex-space-between'>
           <li>
-            <figure className='flex-centered'>
-              <div className='home-menu-img'>
-                <img src={image1} alt="start curating image"></img>
-                <figcaption>Start Curating and Earning</figcaption>
-              </div>
-            </figure>
+            {/* TODO: This is a hack! */}
+            <a href="http://localhost:1234/curation">
+              <figure className='flex-centered'>
+                <div className='home-menu-img'>
+                  <img src={image1} alt="start curating image"></img>
+                  <figcaption>Start Curating and Earning</figcaption>
+                </div>
+              </figure>
+            </a>
           </li>
           <li>
             <figure className='flex-centered'>

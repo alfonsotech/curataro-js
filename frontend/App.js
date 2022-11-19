@@ -7,8 +7,7 @@ import LandingPage from './components/LandingPage';
 import './assets/global.css';
 import './App.css';
 
-
-export default function App({ isSignedIn, wallet }) {
+export default function App({ isSignedIn, wallet, updateEarnings }) {
 
   if (!isSignedIn) {
     return <LandingPage onClick={() => wallet.signIn()}/>;
