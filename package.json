@@ -15,5 +15,9 @@
   },
   "devDependencies": {
     "near-cli": "^3.3.0"
-  }
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/alfonsotech/curataro-js/blob/main/LICENSE.md"
+  }]
 }
