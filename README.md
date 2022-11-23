@@ -1,6 +1,6 @@
-Curataro
-Curate-to-Earn application. 
-Helping collections and platforms to vet NFTs through crowdsourced curation. 
+# Curataro
+### Curate-to-Earn application. 
+#### Helping collections and platforms to vet NFTs through crowdsourced curation. 
 ==================
 
 This app was initialized with [create-near-app]
